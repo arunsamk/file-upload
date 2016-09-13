@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Upload</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body ng-click="fuploadApp">
+<form ng-controller="fuploadCtrl">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" class="form-control" id="name" placeholder="Enter your Name" required ng-model="customer.name">
+	</div>
+	<div class="form-group">
+		<label for="email">Email</label>
+		<input type="email" class="form-control" id="email" placeholder="Enter your email-id" required ng-model="customer.email">
+	</div>
+	<div class="form-group">
+		<label for="fileinput">File</label>
+		<input type="file" id="fileinput" file-model="customer.file">
+	</div>	
+	<button type="submit" class="btn btn-default" ng-click="Submit()">Submit</button>	
+</form>
+
+Value: {{ customer }}
+
+<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>-->
+
+
+ <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="node_modules/angular-resource/angular-resource.js"></script>
+
+
+
+</body>
+</html>
